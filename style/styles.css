@@ -7,6 +7,7 @@ body {
   background-image: url("/data/virus.png");
   background-repeat: no-repeat;
   background-size: cover;
+  
 }
 .footer-container {
   position: relative;
@@ -35,17 +36,22 @@ h1 {
   color: rgb(211, 153, 54);
   font-size: 100px;
   margin-bottom: 10px;
+  text-shadow: -1px -1px 0 black,1px -1px 0 black,-1px  1px 0 black,1px  1px 0 black;
 }
 
-p, ul {
+p, ul, form,button {
   color: rgb(211, 153, 54);
   text-align: justify;
-  font-size: 200%;
+  font-size: 150%;
   font-family:monospace;
   margin: 20px 25% 20px;
   padding: 30px;
   border-radius: 15px;
   justify-content: center;
+  background-color: rgba(255, 255, 255, 0.911);
+  background-size:auto;
+  border-radius: 0px;
+  border: 7px ridge rgb(233, 159, 55);
 }
 
 
@@ -53,6 +59,8 @@ nav a{
   color:red;
   text-decoration: none;
   padding-right: 30px;
+  text-shadow: -1px -1px 0 black,1px -1px 0 black,-1px  1px 0 black,1px  1px 0 black;
+  font-size: 25px;
 }
 
 nav{
@@ -75,11 +83,11 @@ p {
 }
 ul{
   list-style-position: inside;
+  text-indent: 2em;
   padding-left: 2em;
 }
 li{
-  padding-left: 2em;
-padding: 80px;
+  text-decoration:none;
 }
 #game-container{
     display: flex;
@@ -95,4 +103,18 @@ padding: 80px;
     height:100px;
     background-color: red;
     position: absolute;
+}
+.bold{
+  font-weight: bold;
+}
+.button{
+  padding: 5%;
+  padding-top: 10%;
+  text-align: center;
+}
+button{
+  font-size: 15px;
+  padding: 10px;
+  background-color: rgba(228, 227, 227, 0.805);
+  border: 4px ridge rgb(233, 159, 55);
 }

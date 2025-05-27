@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Page d'acceuil</title>
+    <link rel="icon" type="image/png" href="/data/img.png">
+    <link rel="stylesheet" href="../style/styles.css">
+    <script src="../script/index.js"></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <span>
+                <img src="/data/duck2.gif" id="gif1">
+            </span>
+            INFORMATIONS
+            <span>
+                <img src="/data/duck2.gif" id="gif2">
+            </span>
+        </h1>
+        <nav>
+            <a href="./acceuil.html">Acceuil</a>
+            <a href="./game.html">Zapper</a>
+            <a href="./info.html">Informations</a>
+        </nav>
+    </header>
+    <div>
+        <form>
+            <div class="question">
+                    <span>1. Quel est l'un des risques pour les promeneurs pendant la période de chasse ?</span>
+                    <br><br>
+                    <label><input type="radio" name="q1" value="a"> Être surpris par un sanglier</label><br>
+                    <label><input type="radio" name="q1" value="b"> Être victime d’un tir accidentel</label><br>
+                    <label><input type="radio" name="q1" value="c"> Se faire mordre par un chien errant</label>
+                    <br><br>
+                    <span>2. Quel métal toxique est encore utilisé dans certaines munitions ?</span><br><br>
+                    <label><input type="radio" name="q2" value="a"> Aluminium</label><br>
+                    <label><input type="radio" name="q2" value="b"> Fer</label><br>
+                    <label><input type="radio" name="q2" value="c"> Plomb</label>
+                    <br><br>
+                    <span>3. La chasse peut-elle perturber l'équilibre des écosystèmes ?</span><br><br>
+                    <label><input type="radio" name="q3" value="a"> Oui</label><br>
+                    <label><input type="radio" name="q3" value="b"> Non</label>
+                    <br><br>
+                    <span>4. Quel type d'animal est souvent relâché pour la chasse mais peut nuire à l'équilibre naturel ?</span><br><br>
+                    <label><input type="radio" name="q4" value="a"> Faisan</label><br>
+                    <label><input type="radio" name="q4" value="b"> Hibou</label><br>
+                    <label><input type="radio" name="q4" value="c"> Castor</label>
+                    <br><br>
+                    <span>5. Quelle est l'une des critiques éthiques principales faites à la chasse de loisir ?</span><br><br>
+                    <label><input type="radio" name="q5" value="a"> Elle est trop coûteuse</label><br>
+                    <label><input type="radio" name="q5" value="b"> Elle provoque de la souffrance animale inutile</label><br>
+                    <label><input type="radio" name="q5" value="c"> Elle empêche les randonnées</label>
+                </div>
+
+                <div class="button"><button type="button" onclick="corrigerQuiz()">Voir les résultats</button></div>
+                <div id="resultat" class="result"></div>
+        </form>
+    </div>
+    <div>
+        <p>
+            <span class="bold">Les Problèmes Liés à la Chasse :</span>
+            La chasse, bien qu’elle soit souvent présentée comme une tradition ou un moyen de gestion de la faune, soulève de nombreuses problématiques d’ordre éthique, écologique, social et sécuritaire. À travers cette page, nous souhaitons mettre en lumière les principaux problèmes que pose la chasse, afin d’informer de manière claire et objective.
+        </p>
+        <ul>
+            <span class="bold">Impact sur la biodiversité !</span>
+            La chasse perturbe les écosystèmes en modifiant artificiellement les équilibres naturels. Certaines espèces sont ciblées de manière excessive, parfois jusqu'à mettre leur survie en péril. De plus, les prélèvements ne tiennent pas toujours compte des dynamiques écologiques complexes, notamment:
+            <li>
+            Le déséquilibre entre prédateurs et proies.
+            </li>
+            <li>
+            La chasse d'espèces dites "nuisibles" sans fondement scientifique solide.
+            </li>
+            <li>
+            Le dérèglement des chaînes alimentaires.
+            </li>
+        </ul>
+        <p>   
+            <span class="bold">Cruauté envers les animaux !</span>
+            La chasse est une activité létale qui cause souffrance et stress à de nombreux animaux. Contrairement à ce que l’on croit parfois, tous les tirs ne sont pas mortels sur le coup. Les animaux blessés peuvent agoniser de longues heures avant de mourir, parfois sans jamais être retrouvés. La chasse avec des chiens, en particulier, peut provoquer des scènes de grande violence, autant pour les animaux sauvages que pour les chiens eux-mêmes.
+        </p>
+        <p>
+            <span class="bold">Risques pour la sécurité publique!</span>
+            La chasse représente un danger pour les promeneurs, les cyclistes, les agriculteurs et autres usagers de la nature. Chaque année, des accidents, parfois mortels, sont recensés. Le simple fait de devoir éviter certaines zones lors des périodes de chasse génère un sentiment d’insécurité parmi la population.
+        </p>
+        <p>
+            <span class="bold">Nuisances sonores et troubles à la tranquillité !</span>
+            Les tirs, les aboiements des chiens, les véhicules motorisés utilisés en forêt ou en campagne sont autant de sources de nuisance. Ces perturbations affectent la faune sauvage, mais également les habitants des zones rurales et les amoureux de la nature venus chercher calme et ressourcement.
+        </p>
+        <ul>
+            <span class="bold">Pressions politiques et absence de régulation équitable !</span>
+            En France (comme dans d'autres pays), le lobby de la chasse est puissant. Il influence souvent les décisions politiques concernant la gestion de la faune sauvage. Cela peut mener à:
+            <li>
+            Des réglementations biaisées.
+            </li><li>
+            Une chasse autorisée même en périodes sensibles (reproduction, sécheresse, etc.).
+            </li><li>
+            Un manque de transparence dans les décisions prises par certaines fédérations de chasse.
+            </li>
+        </ul>
+        <p>
+            <span class="bold">Atteintes à la nature et pollution !</span>
+            La chasse implique parfois l’introduction d'espèces non indigènes (comme les faisans d'élevage), qui peuvent perturber l’écosystème local. De plus, le plomb utilisé dans les munitions est un polluant toxique, qui contamine les sols et les cours d’eau, avec des effets néfastes sur la faune, les écosystèmes et même la santé humaine.
+        </p>
+        <p>
+            <span class="bold">Chasse et éthique : un débat de société !</span>
+            De plus en plus de citoyens questionnent la légitimité éthique de tuer des animaux pour le loisir. La société évolue vers une prise en compte accrue de la sensibilité animale, du respect du vivant, et de la préservation de la nature. La chasse de loisir entre alors en contradiction avec ces valeurs émergentes.
+        </p>
+        <p>
+            <span class="bold">Pour conclure la chasse n’est pas un simple loisir anodin: ses conséquences sont nombreuses, profondes et souvent irréversibles</span>. Il est aujourd’hui essentiel de remettre en question certaines pratiques, de mieux encadrer cette activité, et d’ouvrir un débat public sincère sur la place de la chasse dans notre société.
+        </p>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <img src="/data/ghibli botttom png.png" id="bottom">
+            <a href="https://www.youtube.com/watch?v=QuGcoOJKXT8" target="_blank" id="absolute">A PROPOS</a>
+        </div>
+    </footer>
+</body>
+</html>
