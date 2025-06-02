@@ -118,3 +118,24 @@ button{
   background-color: rgba(228, 227, 227, 0.805);
   border: 4px ridge rgb(233, 159, 55);
 }
+
+.us{
+  border-radius: 15px;
+  border-radius: 0px;
+  border: 7px ridge rgb(233, 159, 55);
+  height: 300px;
+  margin: 40px;
+  
+}
+
+.pictcontainer{
+  text-align: center;
+}
+.nameblock{
+  margin: 10px;
+  text-align: center;
+  text-indent: 0;
+  justify-content: center;
+  height:500px;
+  width: 500px; 
+};
