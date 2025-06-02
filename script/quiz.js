@@ -26,6 +26,10 @@ function corrigerQuiz() {
 
 
     if (score < 5) {
+        resultatDiv.innerHTML+= `<h2>Dommage. Voici un petit peu de contexte : </h2>`;
         document.getElementById("infos").style.display = "block";
+    }
+    else{
+        resultatDiv.innerHTML+= `<h2>Bravo ! Vous avez réussi le quiz !</h2>`;
     }
 }
